@@ -77,7 +77,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="/Jignesh_Ramawat_Resume.pdf"
+              href="/https://drive.google.com/drive/u/0/my-drive"
               download
               className="btn-outline text-white/80 text-xs"
             >

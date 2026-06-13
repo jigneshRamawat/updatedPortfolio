@@ -196,7 +196,7 @@ export default function HeroSection() {
                 </button>
 
                 <a
-                  href="/Jignesh_Ramawat_Resume.pdf"
+                  href="https://drive.google.com/drive/u/0/my-drive"
                   download
                   className="px-6 py-3 rounded-full border border-white/20 hover:border-red-500 text-white/80 hover:text-white transition-all duration-300"
                 >
