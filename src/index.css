@@ -231,3 +231,20 @@ canvas {
   opacity: 1;
   transform: translateY(0);
 }
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 9999;
+  background: var(--theme-color, #ff6b6b);
+  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
+  mix-blend-mode: difference;
+}
+
+.cursor.hovering {
+  width: 40px;
+  height: 40px;
+}

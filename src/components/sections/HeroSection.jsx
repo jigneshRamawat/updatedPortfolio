@@ -196,11 +196,12 @@ export default function HeroSection() {
                 </button>
 
                 <a
-                  href="https://drive.google.com/drive/u/0/my-drive"
-                  download
+                  href="https://drive.google.com/file/d/1GbQVkkyRJOhY4neA8l5NfYutVCZ6AsRt/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-3 rounded-full border border-white/20 hover:border-red-500 text-white/80 hover:text-white transition-all duration-300"
                 >
-                  Download Resume
+                  View Resume
                 </a>
 
                 <button
@@ -221,7 +222,7 @@ export default function HeroSection() {
                 {[
                   { num: '7', label: 'Projects' },
                   { num: '2+', label: 'Internships' },
-                  { num: 'MCA', label: ['Student' , '+ Profesional']  },
+                  { num: 'MCA', label: 'Student + Professional' },
                 ].map(item => (
                   <div key={item.label}>
                     <h3 className="text-2xl font-bold text-white">

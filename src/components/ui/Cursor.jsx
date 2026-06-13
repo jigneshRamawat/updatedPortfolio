@@ -8,10 +8,7 @@ export default function Cursor() {
     if (!cursor) return
 
     const onMouseMove = (e) => {
-      cursor.style.transform = `
-        translate(${e.clientX}px, ${e.clientY}px)
-        translate(-50%, -50%)
-      `
+      cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
     }
 
     const onMouseOver = (e) => {
@@ -37,9 +34,5 @@ export default function Cursor() {
     }
   }, [])
 
-  return (
-    <div ref={cursorRef} className="cursor">
-      J
-    </div>
-  )
+  return <div ref={cursorRef} className="cursor" />
 }

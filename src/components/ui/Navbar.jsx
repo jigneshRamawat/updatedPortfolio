@@ -74,11 +74,12 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA */}
+          {/* CTA - Redirect to Resume */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="/https://drive.google.com/drive/u/0/my-drive"
-              download
+              href="https://drive.google.com/file/d/1GbQVkkyRJOhY4neA8l5NfYutVCZ6AsRt/view"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-outline text-white/80 text-xs"
             >
               Resume
@@ -119,6 +120,17 @@ export default function Navbar() {
                 {link.label}
               </motion.button>
             ))}
+            <motion.a
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: NAV_LINKS.length * 0.07 }}
+              href="https://drive.google.com/file/d/1GbQVkkyRJOhY4neA8l5NfYutVCZ6AsRt/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-display font-medium text-3xl text-crimson-400 hover:text-crimson-300 transition-colors"
+            >
+              Resume
+            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>
