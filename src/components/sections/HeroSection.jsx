@@ -63,7 +63,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-screen pt-20 overflow-hidden bg-[#050508]"
+      className="relative w-full min-h-screen pt-20 mt-10 overflow-hidden bg-[#050508]"
       ref={scrollRef}
     >
       {/* 3D Canvas Background */}
